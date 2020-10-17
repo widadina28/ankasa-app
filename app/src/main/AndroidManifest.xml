@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".searchFlight.SearchFlightActivity"></activity>
         <activity android:name=".forgot.ForgotPassActivity" />
-        <activity android:name=".register.RegisterActivity"/>
-        <activity android:name=".onboard.OnBoardActivity"/>
+        <activity android:name=".register.RegisterActivity" />
+        <activity android:name=".onboard.OnBoardActivity" />
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".splash.SplashActivity">
@@ -23,4 +23,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
