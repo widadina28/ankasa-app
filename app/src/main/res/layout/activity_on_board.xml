@@ -35,6 +35,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_create_account"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -57,8 +58,9 @@
             app:layout_constraintTop_toBottomOf="@+id/vp_indicator" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_sign_up"
+            android:id="@+id/btn_sign_in"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
