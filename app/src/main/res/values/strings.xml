@@ -9,4 +9,5 @@
     <string name="did_you_forgot_password">Did You Forgot Password?</string>
     <string name="textInForgot">You’ll get message soon on your email</string>
     <string name="send">Send</string>
+    <string name="booking_pass">Booking Pass</string>
 </resources>
