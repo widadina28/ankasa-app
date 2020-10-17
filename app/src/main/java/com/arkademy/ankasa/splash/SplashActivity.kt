@@ -9,6 +9,7 @@ import com.arkademy.ankasa.MainActivity
 import com.arkademy.ankasa.R
 import com.arkademy.ankasa.databinding.ActivitySplashBinding
 import com.arkademy.ankasa.login.LoginActivity
+import com.arkademy.ankasa.onboard.OnBoardActivity
 
 class SplashActivity : AppCompatActivity() {
     private lateinit var binding : ActivitySplashBinding
@@ -17,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
         binding= DataBindingUtil.setContentView(this, R.layout.activity_splash)
 
         Handler().postDelayed({
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, OnBoardActivity::class.java)
             startActivity(intent)
             finish()
         }, 4000)
