@@ -2,6 +2,7 @@ package com.arkademy.ankasa.onboard
 
 import android.view.View
 import androidx.core.view.ViewCompat
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 
 class OnBoardTransition(private val offscreenPageLimit: Int) : ViewPager2.PageTransformer {
