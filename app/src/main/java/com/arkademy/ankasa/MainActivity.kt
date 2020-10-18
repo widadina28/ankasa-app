@@ -4,15 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.arkademy.ankasa.dashboard.ExploreFragment
+import com.arkademy.ankasa.dashboard.explore.ExploreFragment
 import com.arkademy.ankasa.dashboard.ProfileFragment
-import com.arkademy.ankasa.dashboard.booking.BookingAdapter
 import com.arkademy.ankasa.dashboard.booking.BookingFragment
-import com.arkademy.ankasa.dashboard.booking.BookingModel
 import com.arkademy.ankasa.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.fragment_booking.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -23,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         val booking = BookingFragment()
         val explore = ExploreFragment()
         val profile = ProfileFragment()
+        val menu = bottom_navigation.menu
+        menu.findItem(R.id.ic_explore).isChecked = true
+
         currentNavigation(explore)
         binding.bottomNavigation.setOnNavigationItemSelectedListener {
             when(it.itemId) {
@@ -34,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun currentNavigation(fragment: Fragment) : Boolean {
+    private fun currentNavigation(fragment: Fragment) : Boolean {
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.container, fragment)
                 .commit()

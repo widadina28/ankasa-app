@@ -3,6 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:padding="24dp"
         android:layout_width="match_parent"
@@ -73,4 +77,5 @@
             app:layout_constraintTop_toBottomOf="@+id/btn_create_account"
             app:strokeColor="@color/colorPrimary" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </layout>

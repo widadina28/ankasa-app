@@ -3,9 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
         tools:context=".dashboard.ProfileFragment">
 
         <ImageView
@@ -36,14 +41,15 @@
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="244dp"
+            android:layout_marginStart="228dp"
             android:fontFamily="@font/poppins_bold"
             android:text="Edit"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView10"
             app:layout_constraintStart_toEndOf="@+id/textView10"
-            app:layout_constraintTop_toTopOf="@+id/textView10" />
+            app:layout_constraintTop_toTopOf="@+id/textView10"
+            app:layout_constraintVertical_bias="0.531" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/iv_profile"
@@ -144,15 +150,6 @@
             app:layout_constraintStart_toStartOf="@+id/rv_card"
             app:layout_constraintTop_toBottomOf="@+id/rv_card" />
 
-        <!--    <ImageView-->
-        <!--        android:id="@+id/imageView7"-->
-        <!--        android:layout_width="wrap_content"-->
-        <!--        android:layout_height="wrap_content"-->
-        <!--        android:src="@drawable/ic_btnbacktoright"-->
-        <!--        app:layout_constraintBottom_toBottomOf="@+id/tv_my_review"-->
-        <!--        app:layout_constraintEnd_toEndOf="@+id/rv_card"-->
-        <!--        app:layout_constraintTop_toTopOf="@+id/tv_my_review" />-->
-
         <TextView
             android:id="@+id/tv_my_review"
             android:layout_width="wrap_content"
@@ -246,6 +243,6 @@
             app:layout_constraintBottom_toBottomOf="@+id/card"
             app:layout_constraintEnd_toEndOf="@+id/textView12" />
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </layout>
