@@ -89,6 +89,10 @@ dependencies {
     //Livedata
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
 
+    // Custom partial imageview
     implementation 'com.joooonho:selectableroundedimageview:1.0.1'
+
+    // Custom editable spinner
+    implementation 'com.reginald:editspinner:1.1.0'
 
 }

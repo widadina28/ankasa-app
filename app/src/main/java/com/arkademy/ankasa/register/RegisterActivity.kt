@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.databinding.DataBindingUtil
+import com.arkademy.ankasa.FormProfileActivity
 import com.arkademy.ankasa.R
 import com.arkademy.ankasa.databinding.ActivityRegisterBinding
 import com.arkademy.ankasa.login.LoginActivity
@@ -25,7 +26,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
         binding.apply {
             when (p0) {
                 btnSignIn -> {startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))}
-                btnSignUp -> {startActivity(Intent(this@RegisterActivity, SearchFlightActivity::class.java))}
+                btnSignUp -> {startActivity(Intent(this@RegisterActivity, FormProfileActivity::class.java))}
             }
         }
     }

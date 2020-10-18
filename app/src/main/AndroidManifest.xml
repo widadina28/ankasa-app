@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".booking.DetailBookingActivity" />
+        <activity android:name=".FormProfileActivity" />
         <activity android:name=".searchFlight.SearchFlightActivity" />
         <activity android:name=".forgot.ForgotPassActivity" />
         <activity android:name=".register.RegisterActivity" />

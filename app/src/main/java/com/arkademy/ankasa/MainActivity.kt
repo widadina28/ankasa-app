@@ -35,13 +35,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun currentNavigation(fragment: Fragment) : Boolean {
-        if (fragment !=null) {
-            supportFragmentManager.beginTransaction().apply {
-                replace(R.id.container, fragment)
-                    .commit()
-            }
-            return true
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.container, fragment)
+                .commit()
         }
-        return false
+        return true
     }
 }

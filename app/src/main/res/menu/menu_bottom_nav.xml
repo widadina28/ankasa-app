@@ -4,7 +4,6 @@
         android:title="My Booking"
         android:icon="@drawable/ic_mybook"/>
     <item android:id="@+id/ic_explore"
-        android:iconTint="null"
         android:icon="@drawable/ic_compas"
         android:title="Explore" />
     <item android:id="@+id/ic_profile"
