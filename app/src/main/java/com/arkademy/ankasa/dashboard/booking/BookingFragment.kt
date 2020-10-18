@@ -27,7 +27,7 @@ class BookingFragment : Fragment() {
         setRecyclerView()
     }
 
-    fun setRecyclerView() {
+    private fun setRecyclerView() {
         rv_booking.adapter = BookingAdapter(BookingModel.getBookingList())
         rv_booking.layoutManager = LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
     }
