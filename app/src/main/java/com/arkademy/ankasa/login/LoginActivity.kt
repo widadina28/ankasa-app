@@ -7,6 +7,7 @@ import android.view.View
 import androidx.databinding.DataBindingUtil
 import com.arkademy.ankasa.MainActivity
 import com.arkademy.ankasa.R
+import com.arkademy.ankasa.booking.DetailBookingActivity
 import com.arkademy.ankasa.databinding.ActivityLoginBinding
 import com.arkademy.ankasa.forgot.ForgotPassActivity
 import kotlinx.android.synthetic.main.activity_login.*
