@@ -28,7 +28,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             binding.btnLogin -> {
-                val intent = Intent(this, DetailBookingActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             }
         }
