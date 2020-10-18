@@ -9,7 +9,6 @@ import com.arkademy.ankasa.FormProfileActivity
 import com.arkademy.ankasa.R
 import com.arkademy.ankasa.databinding.ActivityRegisterBinding
 import com.arkademy.ankasa.login.LoginActivity
-import com.arkademy.ankasa.searchFlight.SearchFlightActivity
 
 class RegisterActivity : AppCompatActivity(), View.OnClickListener {
 
